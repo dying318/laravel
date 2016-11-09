@@ -15,14 +15,6 @@ use Illuminate\Http\Request;
 /**
 * 
 */
-Class Foo {
-
-}
-
-App::bind('foo', function () {
-	return new stdClass();
-});
-dd(app());
 
 Route::get('/user', function (Foo $request) {
 	dd($request);
