@@ -16,7 +16,7 @@ use Illuminate\Http\Request;
 * 
 */
 
-Route::get('/user', function (Foo $request) {
+Route::get('/user', function (Request $request) {
 	dd($request);
     return $request->user();
 });
